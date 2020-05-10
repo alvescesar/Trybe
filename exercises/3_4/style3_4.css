@@ -2,8 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap');
 
 body {
+    display: block;
     text-align: justify;
-    background-color: rgba(169, 182, 255, 0.329)
+    color: rgb(55, 57, 58);
+    background-color: rgba(222,245,242,.7);
+    box-shadow: 2px 2px 2px rgb(76,92,104);
 }
 
 /* Interface formatting */
@@ -11,14 +14,14 @@ body {
 header#main-header h1 {
     display: block;
     font-family: Lora, sans-serif;
-    border-bottom: 2px rgba(0,0,0,.4) solid;
+    border-bottom: 2px rgba(25,133,161,.5) solid;
     padding: 20px;
 }
 
     nav#navigator {
         display: block;
         border: 2px black solid;
-        box-shadow: 2px 2px 2px black;
+        box-shadow: 2px 2px 2px rgb(76,92,104);
         padding: 5px;
         margin-right: 90%;
         }
@@ -44,7 +47,7 @@ article#home {
 }
 
     article#home h1, h2 {
-        border-bottom: 2px rgba(0,0,0,.4) solid;
+        border-bottom: 2px rgba(25,133,161,.5) solid;
     }
 
         article#home h2 {
@@ -55,5 +58,5 @@ article#home {
         article#home h3 {
             font-size: 16pt;
             padding: 10px;
-            border-bottom: 2px rgba(0,0,0,.4) solid;
+            border-bottom: 2px rgba(25,133,161,.5) solid;
         }
