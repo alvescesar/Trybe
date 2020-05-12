@@ -1,0 +1,5 @@
+O navegador envia para o ISP o a informação de protocolo, domínio e recursos (se houver).
+O ISP pesquisa no DNS o IP do servidor atravéns do domínio e envia a requisição.
+É aberto entre o cliente uma conexão TCP/IP 
+Servidor envia os dados pequenos pacotes, para o Cliente usando HTTP
+O cliente recebe informação e renderiza o dado na tela.
