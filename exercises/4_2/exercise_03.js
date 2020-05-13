@@ -3,5 +3,5 @@ let sum = 0;
 
 for (i = 0; i < numbers.length; i++) {
 		sum += numbers[i];
-		console.log(sum/2);
+		console.log(sum/numbers.length);
 }
