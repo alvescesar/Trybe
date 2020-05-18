@@ -5,9 +5,9 @@ function palindrome(word) {
 			reverse += word[i];
 	}
 	if (word === reverse) {
-		console.log("True");
+		console.log(true);
 	} else {
-		console.log("False");
+		console.log(false);
 	}
 }
 
