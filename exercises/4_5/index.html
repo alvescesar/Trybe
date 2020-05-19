@@ -51,28 +51,28 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-			document.getElementsByTagName("p")[1].innerHTML = "Mais tranquilo que água de poço";
-			document.getElementsByClassName("main-content")[0].style.backgroundColor = "green";
-			document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
-			document.getElementsByClassName("title")[0].innerHTML = "Exercício 4.5 - Javascript";
-			
-			let textToUpperCase = function() {
-          let paragraph = document.getElementsByTagName("p");
+	document.getElementsByTagName("p")[1].innerHTML = "Mais tranquilo que água de poço";
+	document.getElementsByClassName("main-content")[0].style.backgroundColor = "green";
+	document.getElementsByClassName("center-content")[0].style.backgroundColor = "white";
+	document.getElementsByClassName("title")[0].innerHTML = "Exercício 4.5 - Javascript";
+	
+	let textToUpperCase = function() {
+		let paragraph = document.getElementsByTagName("p");
 
-          for (character of paragraph) {
-						character.innerHTML = character.innerHTML.toUpperCase();
-        }
-			}
-        textToUpperCase();
+		for (character of paragraph) {
+			character.innerHTML = character.innerHTML.toUpperCase();
+		}
+	}
+		textToUpperCase();
 
-			let content = function() {
-				let reader = document.getElementsByTagName("p");
-				
-				for (character of reader) {
-					console.log(character.innerHTML);
-				}
-			}
-				content();
+	let content = function() {
+		let reader = document.getElementsByTagName("p");
+		
+		for (character of reader) {
+			console.log(character.innerHTML);
+		}
+	}
+		content();
     </script>
   </body>
 </html>
