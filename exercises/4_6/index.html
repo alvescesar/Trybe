@@ -63,10 +63,18 @@
 			header1.appendChild(headerTitle);
 			document.querySelector("body").appendChild(header1);
 
-			//Adicione a tag div com a classe main-content como filho da tag body;
-			let div1 = document.createElement("div.main-content");
+			// Adicione a tag div com a classe main-content como filho da tag body;
+			let div1 = document.createElement("div");
+			div1.className = "main-content";
 			document.querySelector("body").appendChild(div1);
 
+			// Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
+			let div2 = document.createElement("div");
+			div2.className = "center-content";
+			document.querySelector("div").appendChild(div2);
+
+			
+			
     </script>
   </body>
 </html>
