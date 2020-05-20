@@ -73,7 +73,13 @@
 			div2.className = "center-content";
 			document.querySelector("div").appendChild(div2);
 
-			
+			// Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
+
+			let text = document.createElement("p");
+			text.innerHTML = "FILHO DA DIV!!!";
+			document.querySelector(".center-content").appendChild(text);
+
+			// Adicione a tag div com a classe left-content como filho da tag div criada no passo 2;
 			
     </script>
   </body>
