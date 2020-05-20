@@ -11,7 +11,7 @@ function arrayIndexCounter(array) {
 		}
 	}
 
-	console.log(counter);
+console.log(counter);
 }
 
 arrayIndexCounter(test);
