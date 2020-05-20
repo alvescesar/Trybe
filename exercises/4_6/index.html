@@ -115,11 +115,23 @@
 
 			for (header3 = 0; header3 < 3; header3 += 1) {
 				let header3 = document.createElement("h3");
+				header3.className = "description";
 				document.querySelector(".main-content").appendChild(header3);
 			}
 
-			// << Parte 2 >>
-			// Adicione a classe title na tag h1 criada;
+			// Parte 2 
+			header1.className = "title";
+			
+			document.querySelector(".main-content").removeChild(leftContent);
+
+			document.querySelector(".right-content").style.margin = "auto";
+
+			document.querySelector(".center-content").parentElement.style.backgroundColor = "green";
+
+			for (item = 0; item < 2; item += 1) {
+				let ul = document.getElementsByTagName("ul")[0];
+				ul.removeChild(ul.lastChild);
+			}
 
     </script>
   </body>
