@@ -56,6 +56,12 @@
   </head>
   <body>
     <script>
+			function createElementWithClass(classes, element) {
+				let tag = document.createElement(element);
+				tag.className = classes.join(" ");
+				return tag;
+			}
+
       // Adicione a tag h1 com o texto Exercício 4.5 - JavaScript DOM como filho da tag body;
 			let header1 = document.createElement("h1");
 			let headerTitle = document.createTextNode("Exercício 4.6 - JavaScript DOM");
@@ -64,13 +70,12 @@
 			document.querySelector("body").appendChild(header1);
 
 			// Adicione a tag div com a classe main-content como filho da tag body;
-			let div1 = document.createElement("div");
-			div1.className = "main-content";
+			
+			let div1 = createElementWithClass(["main-content"], "div")
 			document.querySelector("body").appendChild(div1);
 
 			// Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
-			let div2 = document.createElement("div");
-			div2.className = "center-content";
+			let div2 = createElementWithClass(["center-content"], "div")
 			document.querySelector("div").appendChild(div2);
 
 			// Adicione a tag p como filho do div criado no passo 3 e coloque algum texto;
