@@ -100,6 +100,17 @@
 
 			// Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do div criado no passo 6;
 			
+			let list = document.createElement("ul");
+			list.className = "unordered";
+			document.querySelector(".right-content").appendChild(list);
+
+			let stringArray = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"];
+				for (index in stringArray) {
+					let listItem = document.createElement("li");
+					listItem.innerHTML += stringArray[index];
+					document.querySelector(".unordered").appendChild(listItem);
+				}
+
     </script>
   </body>
 </html>
