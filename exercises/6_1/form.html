@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Document</title>
 </head>
 <body>
   <form>
-    <fieldset>
+    <fieldset class="personal-information">
       <legend>Dados Pessoais</legend>
       <label for="fname">Nome completo</label>
-      <input type="text" id="fname" name="fname" required="required" maxlength="40"/>
+      <input type="text" id="fname" name="fname" required="required" maxlength="40" placeholder="Digite seu Nome"/>
       <label for="email">E-mail</label>
-      <input type="text" id="email" name="email" required="required" maxlength="50"/>
+      <input type="text" id="email" name="email" required="required" maxlength="50" placeholder="Digite seu E-mail"/>
       <label for="cpf">CPF</label>
-      <input type="text" id="cpf" name="cpf" required="required" maxlength="11"/>
+      <input type="text" id="cpf" name="cpf" required="required" maxlength="11"placeholder="Digite seu CPF"/>
       <label for="address">Endereço</label>
-      <input type="text" id="address" name="address" required="required" maxlength="200"/>
+      <input type="text" id="address" name="address" required="required" maxlength="200" placeholder="Digite seu Endereço"/>
       <label for="city">Cidade</label>
-      <input type="text" id="city" name="city" required="required" maxlength="28"/>
+      <input type="text" id="city" name="city" required="required" maxlength="28" placeholder="Digite sua Cidade" />
       <label for="state">Estado</label>
-      <select id="state" name="state" required="required">
-        <option id="state"></option>
+      <select id="states" name="states" required="required">
+        <option></option>
       </select>
       <label for="house">Casa</label>
       <input type="radio" id="house" name="residence" required="required">
@@ -29,5 +30,6 @@
       <input type="radio" id="apartment" name="residence" required="required">
     </fieldset>
   </form>
+  <script src="script.js"></script>
 </body>
 </html>
