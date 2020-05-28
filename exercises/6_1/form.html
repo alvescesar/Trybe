@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <label for="fname">Nome completo</label>
+      <input type="text" id="fname" name="fname" required="required" maxlength="40"/>
+      <label for="email">E-mail</label>
+      <input type="text" id="email" name="email" required="required" maxlength="50"/>
+      <label for="cpf">CPF</label>
+      <input type="text" id="cpf" name="cpf" required="required" maxlength="11"/>
+      <label for="address">Endereço</label>
+      <input type="text" id="address" name="address" required="required" maxlength="200"/>
+      <label for="city">Cidade</label>
+      <input type="text" id="city" name="city" required="required" maxlength="28"/>
+      <label for="state">Estado</label>
+      <select id="state" name="state" required="required">
+        <option id="state"></option>
+      </select>
+      <label for="house">Casa</label>
+      <input type="radio" id="house" name="residence" required="required">
+      <label for="apartment">Apartamento</label>
+      <input type="radio" id="apartment" name="residence" required="required">
+    </fieldset>
+  </form>
+</body>
+</html>
