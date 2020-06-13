@@ -11,7 +11,7 @@ function arrayIndexCounter(array) {
 		}
 	}
 
-console.log(counter);
+console.log(`The lowest number in the array is ${lowest}, index [${counter}]`);
 }
 
 arrayIndexCounter(test);
