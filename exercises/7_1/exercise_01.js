@@ -1,12 +1,14 @@
-function factorial(number){
-  if (number == 0) {
-      return 1;
-  }
+// Recursive
+let factorial = (number) => {
   let result = number;
   while (number > 2) {
       result *= --number;
   }
-  console.log(`The factorial of this number is ${result}`);
+  return(`The factorial of your number is ${result}`);
 }
 
-factorial(10);
+console.log(factorial(5));
+
+// One line
+factorial = (number) => {for(let i = number - 1; i >= 1; i -= 1) {number *= i;} return number}
+console.log(factorial(6));
