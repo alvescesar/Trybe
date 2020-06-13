@@ -16,7 +16,7 @@ for (let key in margarida, tioPatinhas) {
     if (margarida[key] === tioPatinhas[key]) {
         console.log("Ambos recorrentes");
     } else {
-        console.log(margarida[key] + " e " + tioPatinhas[key]);
+        console.log(`${margarida[key]} e ${tioPatinhas[key]}`);
     }
 }
 

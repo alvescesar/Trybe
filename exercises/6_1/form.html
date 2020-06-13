@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset class="personal-information">
+      <legend>Dados Pessoais</legend>
+      <div>
+        <label for="fname">Nome completo:</label>
+        <input type="text" id="fname" name="fname" required="required" maxlength="40" placeholder="Digite seu Nome"/>
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required="required" maxlength="50" placeholder="Digite seu E-mail"/>
+      </div>
+      <div>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required="required" maxlength="11" placeholder="Digite seu CPF"/>
+      </div>
+      <div>
+        <label for="address">Endereço:</label>
+        <input type="text" id="address" name="address" required="required" maxlength="200" placeholder="Digite seu Endereço"/>
+      </div>
+      <div>
+        <label for="city">Cidade:</label>
+        <input type="text" id="city" name="city" required="required" maxlength="28" placeholder="Digite sua Cidade" />
+      </div>
+      <div>
+        <label for="state">Estado:</label>
+        <select id="states" name="states" required="required">
+          <option>Escolha seu Estado:</option>
+        </select>
+      </div>
+      <div>
+        <label for="house">Casa</label>
+        <input type="radio" id="house" name="residence" required="required">
+      </div>
+      <div>
+        <label for="apartment">Apartamento</label>
+        <input type="radio" id="apartment" name="residence" required="required">
+      </div>
+    </fieldset>
+    <fieldset class="employment">
+      <legend>Currículo</legend>
+      <div>
+        <label for="resume">Último Emprego:</label>
+        <textarea type="text" id="resume" name="resume" required="required" maxlength="1000" placeholder="Descreva seu último emprego"></textarea>
+      </div>
+      <div>
+        <label for="position">Cargo:</label>
+        <input type="text" id="position" name="position" required="required" maxlength="40" placeholder="Cargo"/>
+      </div>
+      <div>
+        <label for="position-description">Descrição do Cargo:</label>
+        <input type="text" id="position-description" name="position-description" required="required" maxlength="500" placeholder="Descreva seu cargo"/>
+      </div>
+      <div>
+        <label for="datepicker">Data:</label>
+        <input type="text" id="datepicker" name="date" required="required"/>
+      </div>
+    </fieldset>
+      <input class="button is-success" type="submit" value="Enviar"/>
+      <input class="button is-danger" type="button" value="Deletar"/>
+  </form>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+</body>
+</html>

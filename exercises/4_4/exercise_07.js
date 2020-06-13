@@ -11,7 +11,7 @@ function arrayIndexCounter(array) {
 		}
 	}
 
-	console.log(counter);
+	console.log(`The highest number in the array is ${highest}, index [${counter}]`);
 }
 
 arrayIndexCounter(test);
