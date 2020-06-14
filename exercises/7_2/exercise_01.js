@@ -20,8 +20,32 @@ const lesson3 = {
 
 //Crie uma função para adicionar o turno da manhã na lesson2. Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 const assignNewKey = (object, key, value) => {object[key] = value; return object;}
+console.log(assignNewKey(lesson2, 'turno', 'manhã'));
 
 //Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 const listKeys = (object) => Object.entries(object);
+console.log(listKeys(lesson1));
 
 //Crie uma função para mostrar o tamanho de um objeto.
+const objectSize = (object) => Object.keys(object).length;
+console.log(objectSize(lesson3));
+
+//Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+const objectValues = (object) => Object.values(object);
+console.log(objectValues(lesson2));
+
+//Crie um objeto de nome allLessons, que deve agrupar todas as aulas através do Object.assign.
+const allLessons = {};
+Object.assign(allLessons, {lesson1}, {lesson2}, {lesson3});
+console.log(allLessons);
+
+//Crie uma função que retorne o número total de estudantes em todas as aulas.
+const studentCounter = (object, key) => {
+  let counter = 0;
+  const students = Object.keys(object);
+  for (eachLesson in students) {
+    counter += object[students[eachLesson]][key];
+  }
+  return counter;
+}
+console.log(studentCounter(allLessons, 'numeroEstudantes'));
