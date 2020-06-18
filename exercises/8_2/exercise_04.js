@@ -63,17 +63,13 @@ const books = [
   },
 ];
 
-const expected_result = [
-  'O Senhor dos Anéis',
-  'Fundação',
-  'O Chamado de Cthulhu'
-]
+const expected_result = 43;
 
-function oldBooks() {
-  // Get current year (flexible, instead of just typing '1960');
-  const currentYear = new Date().getFullYear();
-  // Filter array by release date and then print it by name
-  return books.filter((book) => book.releaseYear < (currentYear - 60)).map((book) => book.name);
+function averageAge() {
+  // Get author age when book was released
+  const ages = books.map((book) => (book.releaseYear) - (book.author.birthYear));
+  // Calculate their average age
+  return ages.reduce((average, age) => (average + age)) / ages.length;
 }
 
-assert.deepEqual(oldBooks(), expected_result);
+assert.equal(averageAge(), expected_result);
