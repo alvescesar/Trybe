@@ -1,16 +1,23 @@
 import React from 'react';
-import './App.css';
 
 const tasks = [
-  'npx create-react-app my-app',
-  'cd my-app-folder',
+  'create-react-app my-app',
+  'cd my-app',
   'npm start'
-]
+];
 
-function App() {
-  return (
-    <ul>{ tasks.map(task => <li>{ task }</li>) }</ul>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <ul>
+        {tasks.map(task => {
+          return (
+            <li>{task}</li>
+          );
+        })}
+      </ul>
+    );
+  };
 }
 
 export default App;
