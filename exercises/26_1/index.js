@@ -10,11 +10,11 @@ async function calculateBMI() {
   const weight = data.weight;
   const height = data.height;
 
-  console.log('Weight: %s, Height: %s', weight, height);
+  console.log(`Weight: ${weight}, Height: ${height}`);
 
   const bmi = (weight / Math.pow(height, 2)).toFixed(2);
 
-  console.log('BMI: %s', bmi);
+  console.log(`BMI: ${bmi}`);
 
   if (bmi < 18.5) {
     console.log('Underweight');
